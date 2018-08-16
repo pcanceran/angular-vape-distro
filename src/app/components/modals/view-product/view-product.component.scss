@@ -1,0 +1,14 @@
+.mod {
+    overflow-x: hidden;
+    h5 {
+        font-size: 1.5em;
+        text-align: center;
+        color: royalblue;
+    }
+    
+    ::-webkit-scrollbar-track{
+        display: none;
+    }
+
+}
+

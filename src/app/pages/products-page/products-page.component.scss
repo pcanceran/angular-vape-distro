@@ -1,0 +1,54 @@
+#toggleView{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.content {
+    background-color: white;
+
+    #category-menu {
+        height: 100%;
+    }
+
+    #product-list {
+        overflow-y: auto;
+        height: 100%;
+        padding: 25px;
+    }
+
+    .item-view {
+        overflow-y: auto;
+    }
+    
+    img {
+        max-width: 100%;
+        transform: 'scale(.85)',
+    }
+
+    #filter {
+        padding-bottom: 10px;
+
+        p {
+            font-size: 24px;
+            margin: 0px;
+        }
+
+    }
+
+    h5{
+        margin-top: auto;
+        margin-bottom: auto;
+        font-weight: normal;
+    }
+
+    .small-update{
+        h5{
+            font-size: 0.75em;
+        }
+    }
+
+    .category{
+        box-sizing: border-box;
+    }
+
+}
+

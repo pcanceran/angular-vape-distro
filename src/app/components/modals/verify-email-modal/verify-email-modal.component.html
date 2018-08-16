@@ -1,0 +1,20 @@
+<div class="container" fxLayout="row wrap" fxLayoutAlign="center center">
+  <h2 fxFlex="80">Your Email</h2>
+  <mat-form-field fxFlex="80" appearance="outline">
+    <mat-label>
+      <!-- Email -->
+      <i class="material-icons">
+        email
+        </i>
+    </mat-label>
+    <input matInput name="email" placeholder="Email Address" [(ngModel)]="email" >  
+  </mat-form-field>
+
+  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="end end " fxLayoutGap="10px" class="buttons"> 
+    <button mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+  </div>
+  <div fxFlex="100" fxLayout="row wrap" fxLayoutAlign="center center">
+    <p class="success"  fxFlex="100" [fxHide]="showError">{{successMessages}}</p>  
+    <p class="error" fxFlex="100" [fxHide]="showSuccess">{{errorMessages}}</p>    
+  </div>

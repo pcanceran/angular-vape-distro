@@ -1,0 +1,10 @@
+
+<div [ngSwitch] = "true" >
+    <div *ngSwitchCase="par === 'notify'" fxLayout="row wrap" class="content" fxLayoutAlign="center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue arcu diam, semper feugiat mi vulputate ut. Nullam tempor pellentesque scelerisque. Curabitur quis purus commodo, vulputate tellus id, fringilla dolor. Vivamus convallis, tellus eget convallis sollicitudin, ex justo tincidunt mauris, at convallis metus diam ac tortor.</p> 
+      <p (click)="sendVerification()" id="link-button">Send Verification Email</p>
+    </div>
+    <div *ngSwitchCase="par !== 'notify'" fxLayout="row wrap" class="content" fxLayoutAlign="center">
+      <p>Bacon ipsum dolor amet flank landjaeger swine kevin alcatra turducken pork chop filet mignon salami kielbasa tri-tip ribeye hamburger. Doner beef ribs hamburger swine, short loin ham t-bone cupim jerky venison biltong meatball ham hock. </p>
+    </div>
+</div>
